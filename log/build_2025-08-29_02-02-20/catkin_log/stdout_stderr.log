@@ -1,0 +1,237 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Using CATKIN_DEVEL_PREFIX: /home/droneproject/matlabTestWs/devel
+-- Using CMAKE_PREFIX_PATH: /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1;/usr/local/MATLAB/R2024b/toolbox/ros/mlroscpp/custom_messages
+-- This workspace overlays: /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1;/usr/local/MATLAB/R2024b/toolbox/ros/mlroscpp/custom_messages
+-- Found PythonInterp: /home/droneproject/.matlab/R2024b/ros1/glnxa64/venv/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /home/droneproject/.matlab/R2024b/ros1/glnxa64/venv/bin/python3
+-- Using Debian Python package layout
+-- Using empy: /usr/bin/empy
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/droneproject/matlabTestWs/build/test_results
+-- Forcing gtest/gmock from source, though one was otherwise available.
+-- Found gtest sources under '/usr/src/googletest': gtests will be built
+-- Found gmock sources under '/usr/src/googletest': gmock will be built
+CMake Deprecation Warning at /usr/src/googletest/CMakeLists.txt:4 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Deprecation Warning at /usr/src/googletest/googlemock/CMakeLists.txt:45 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Deprecation Warning at /usr/src/googletest/googletest/CMakeLists.txt:56 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- Found PythonInterp: /home/droneproject/.matlab/R2024b/ros1/glnxa64/venv/bin/python3 (found version "3.8.10") 
+-- Found Threads: TRUE  
+-- Using Python nosetests: /usr/bin/nosetests3
+-- catkin 0.8.10
+-- BUILD_SHARED_LIBS is on
+-- BUILD_SHARED_LIBS is on
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- ~~  traversing 1 packages in topological order:
+-- ~~  - greenhousehovertest
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- +++ processing catkin package: 'greenhousehovertest'
+-- ==> add_subdirectory(greenhousehovertest)
+CMake Warning at /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/share/genmsg/cmake/genmsg-extras.cmake:49 (message):
+  Unknown message generator specified in ROS_LANG_DISABLE: geneus
+Call Stack (most recent call first):
+  /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/share/genmsg/cmake/genmsgConfig.cmake:222 (include)
+  /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/share/actionlib_msgs/cmake/actionlib_msgs-extras.cmake:2 (find_package)
+  /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/share/actionlib_msgs/cmake/actionlib_msgsConfig.cmake:222 (include)
+  /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/share/nav_msgs/cmake/nav_msgsConfig.cmake:197 (find_package)
+  /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/share/catkin/cmake/catkinConfig.cmake:76 (find_package)
+  greenhousehovertest/CMakeLists.txt:20 (find_package)
+
+
+CMake Warning at /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/share/genmsg/cmake/genmsg-extras.cmake:49 (message):
+  Unknown message generator specified in ROS_LANG_DISABLE: genlisp
+Call Stack (most recent call first):
+  /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/share/genmsg/cmake/genmsgConfig.cmake:222 (include)
+  /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/share/actionlib_msgs/cmake/actionlib_msgs-extras.cmake:2 (find_package)
+  /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/share/actionlib_msgs/cmake/actionlib_msgsConfig.cmake:222 (include)
+  /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/share/nav_msgs/cmake/nav_msgsConfig.cmake:197 (find_package)
+  /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/share/catkin/cmake/catkinConfig.cmake:76 (find_package)
+  greenhousehovertest/CMakeLists.txt:20 (find_package)
+
+
+CMake Warning at /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/share/genmsg/cmake/genmsg-extras.cmake:49 (message):
+  Unknown message generator specified in ROS_LANG_DISABLE: gennodejs
+Call Stack (most recent call first):
+  /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/share/genmsg/cmake/genmsgConfig.cmake:222 (include)
+  /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/share/actionlib_msgs/cmake/actionlib_msgs-extras.cmake:2 (find_package)
+  /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/share/actionlib_msgs/cmake/actionlib_msgsConfig.cmake:222 (include)
+  /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/share/nav_msgs/cmake/nav_msgsConfig.cmake:197 (find_package)
+  /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/share/catkin/cmake/catkinConfig.cmake:76 (find_package)
+  greenhousehovertest/CMakeLists.txt:20 (find_package)
+
+
+-- Using these message generators: gencpp;genpy
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    Boost_NAMESPACE
+
+
+-- Build files have been written to: /home/droneproject/matlabTestWs/build
+[1/8] Building CXX object greenhousehovertest/CMakeFiles/greenhouseHoverTest.dir/src/slros_generic_param.cpp.o
+In file included from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/smart_ptr/detail/sp_thread_sleep.hpp:22,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/smart_ptr/detail/yield_k.hpp:23,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:14,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/smart_ptr/detail/spinlock.hpp:42,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/smart_ptr/detail/spinlock_pool.hpp:25,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/smart_ptr/shared_ptr.hpp:65,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/shared_ptr.hpp:53,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/include/ros/forwards.h:37,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/include/ros/common.h:37,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/include/ros/ros.h:43,
+                 from /home/droneproject/matlabTestWs/src/greenhousehovertest/include/greenhousehovertest/slros_generic_param.h:9,
+                 from /home/droneproject/matlabTestWs/src/greenhousehovertest/src/slros_generic_param.cpp:3:
+/usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/bind.hpp:72:1: note: #pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace mwboost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.
+   72 | BOOST_PRAGMA_MESSAGE(
+      | ^~~~~~~~~~~~~~~~~~~~
+[2/8] Building CXX object greenhousehovertest/CMakeFiles/greenhouseHoverTest.dir/src/rosnodeinterface.cpp.o
+In file included from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/smart_ptr/detail/sp_thread_sleep.hpp:22,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/smart_ptr/detail/yield_k.hpp:23,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:14,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/smart_ptr/detail/spinlock.hpp:42,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/smart_ptr/detail/spinlock_pool.hpp:25,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/smart_ptr/shared_ptr.hpp:65,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/shared_ptr.hpp:53,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/include/ros/forwards.h:37,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/include/ros/common.h:37,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/include/ros/ros.h:43,
+                 from /home/droneproject/matlabTestWs/src/greenhousehovertest/include/greenhousehovertest/slros_busmsg_conversion.h:4,
+                 from /home/droneproject/matlabTestWs/src/greenhousehovertest/include/greenhousehovertest/slros_initialize.h:4,
+                 from /home/droneproject/matlabTestWs/src/greenhousehovertest/include/greenhousehovertest/greenhouseHoverTest.h:26,
+                 from /home/droneproject/matlabTestWs/src/greenhousehovertest/src/rosnodeinterface.cpp:33:
+/usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/bind.hpp:72:1: note: #pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace mwboost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.
+   72 | BOOST_PRAGMA_MESSAGE(
+      | ^~~~~~~~~~~~~~~~~~~~
+[3/8] Building CXX object greenhousehovertest/CMakeFiles/greenhouseHoverTest.dir/src/main.cpp.o
+In file included from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/smart_ptr/detail/sp_thread_sleep.hpp:22,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/smart_ptr/detail/yield_k.hpp:23,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:14,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/smart_ptr/detail/spinlock.hpp:42,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/smart_ptr/detail/spinlock_pool.hpp:25,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/smart_ptr/shared_ptr.hpp:65,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/shared_ptr.hpp:53,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/include/ros/forwards.h:37,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/include/ros/common.h:37,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/include/ros/ros.h:43,
+                 from /home/droneproject/matlabTestWs/src/greenhousehovertest/include/greenhousehovertest/slros_busmsg_conversion.h:4,
+                 from /home/droneproject/matlabTestWs/src/greenhousehovertest/include/greenhousehovertest/slros_initialize.h:4,
+                 from /home/droneproject/matlabTestWs/src/greenhousehovertest/include/greenhousehovertest/greenhouseHoverTest.h:26,
+                 from /home/droneproject/matlabTestWs/src/greenhousehovertest/include/greenhousehovertest/rosnodeinterface.h:33,
+                 from /home/droneproject/matlabTestWs/src/greenhousehovertest/src/main.cpp:12:
+/usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/bind.hpp:72:1: note: #pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace mwboost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.
+   72 | BOOST_PRAGMA_MESSAGE(
+      | ^~~~~~~~~~~~~~~~~~~~
+[4/8] Building CXX object greenhousehovertest/CMakeFiles/greenhouseHoverTest.dir/src/slros_initialize.cpp.o
+In file included from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/smart_ptr/detail/sp_thread_sleep.hpp:22,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/smart_ptr/detail/yield_k.hpp:23,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:14,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/smart_ptr/detail/spinlock.hpp:42,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/smart_ptr/detail/spinlock_pool.hpp:25,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/smart_ptr/shared_ptr.hpp:65,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/shared_ptr.hpp:53,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/include/ros/forwards.h:37,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/include/ros/common.h:37,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/include/ros/ros.h:43,
+                 from /home/droneproject/matlabTestWs/src/greenhousehovertest/include/greenhousehovertest/slros_busmsg_conversion.h:4,
+                 from /home/droneproject/matlabTestWs/src/greenhousehovertest/include/greenhousehovertest/slros_initialize.h:4,
+                 from /home/droneproject/matlabTestWs/src/greenhousehovertest/src/slros_initialize.cpp:1:
+/usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/bind.hpp:72:1: note: #pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace mwboost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.
+   72 | BOOST_PRAGMA_MESSAGE(
+      | ^~~~~~~~~~~~~~~~~~~~
+[5/8] Building CXX object greenhousehovertest/CMakeFiles/greenhouseHoverTest.dir/src/slros_busmsg_conversion.cpp.o
+In file included from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/smart_ptr/detail/sp_thread_sleep.hpp:22,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/smart_ptr/detail/yield_k.hpp:23,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:14,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/smart_ptr/detail/spinlock.hpp:42,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/smart_ptr/detail/spinlock_pool.hpp:25,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/smart_ptr/shared_ptr.hpp:65,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/shared_ptr.hpp:53,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/include/ros/forwards.h:37,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/include/ros/common.h:37,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/include/ros/ros.h:43,
+                 from /home/droneproject/matlabTestWs/src/greenhousehovertest/include/greenhousehovertest/slros_busmsg_conversion.h:4,
+                 from /home/droneproject/matlabTestWs/src/greenhousehovertest/src/slros_busmsg_conversion.cpp:1:
+/usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/bind.hpp:72:1: note: #pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace mwboost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.
+   72 | BOOST_PRAGMA_MESSAGE(
+      | ^~~~~~~~~~~~~~~~~~~~
+[6/8] Building CXX object greenhousehovertest/CMakeFiles/greenhouseHoverTest.dir/src/greenhouseHoverTest.cpp.o
+In file included from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/smart_ptr/detail/sp_thread_sleep.hpp:22,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/smart_ptr/detail/yield_k.hpp:23,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:14,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/smart_ptr/detail/spinlock.hpp:42,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/smart_ptr/detail/spinlock_pool.hpp:25,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/smart_ptr/shared_ptr.hpp:65,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/shared_ptr.hpp:53,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/include/ros/forwards.h:37,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/include/ros/common.h:37,
+                 from /usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/include/ros/ros.h:43,
+                 from /home/droneproject/matlabTestWs/src/greenhousehovertest/include/greenhousehovertest/slros_busmsg_conversion.h:4,
+                 from /home/droneproject/matlabTestWs/src/greenhousehovertest/include/greenhousehovertest/slros_initialize.h:4,
+                 from /home/droneproject/matlabTestWs/src/greenhousehovertest/include/greenhousehovertest/greenhouseHoverTest.h:26,
+                 from /home/droneproject/matlabTestWs/src/greenhousehovertest/src/greenhouseHoverTest.cpp:21:
+/usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/boost/include/boost/bind.hpp:72:1: note: #pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace mwboost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.
+   72 | BOOST_PRAGMA_MESSAGE(
+      | ^~~~~~~~~~~~~~~~~~~~
+[7/8] Linking CXX executable /home/droneproject/matlabTestWs/devel/lib/greenhousehovertest/greenhouseHoverTest
+[7/8] Install the project...
+-- Install configuration: ""
+-- Installing: /home/droneproject/matlabTestWs/install/_setup_util.py
+-- Installing: /home/droneproject/matlabTestWs/install/env.sh
+-- Installing: /home/droneproject/matlabTestWs/install/setup.bash
+-- Installing: /home/droneproject/matlabTestWs/install/local_setup.bash
+-- Installing: /home/droneproject/matlabTestWs/install/setup.sh
+-- Installing: /home/droneproject/matlabTestWs/install/local_setup.sh
+-- Installing: /home/droneproject/matlabTestWs/install/setup.zsh
+-- Installing: /home/droneproject/matlabTestWs/install/local_setup.zsh
+-- Installing: /home/droneproject/matlabTestWs/install/.rosinstall
+-- Installing: /home/droneproject/matlabTestWs/install/lib/pkgconfig/greenhousehovertest.pc
+-- Installing: /home/droneproject/matlabTestWs/install/share/greenhousehovertest/cmake/greenhousehovertestConfig.cmake
+-- Installing: /home/droneproject/matlabTestWs/install/share/greenhousehovertest/cmake/greenhousehovertestConfig-version.cmake
+-- Installing: /home/droneproject/matlabTestWs/install/share/greenhousehovertest/package.xml
+-- Installing: /home/droneproject/matlabTestWs/install/lib/greenhousehovertest/greenhouseHoverTest
+Base path: /home/droneproject/matlabTestWs
+Source space: /home/droneproject/matlabTestWs/src
+Build space: /home/droneproject/matlabTestWs/build
+Devel space: /home/droneproject/matlabTestWs/devel
+Install space: /home/droneproject/matlabTestWs/install
+Creating symlink "/home/droneproject/matlabTestWs/src/CMakeLists.txt" pointing to "/usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1/share/catkin/cmake/toplevel.cmake"
+####
+#### Running command: "cmake /home/droneproject/matlabTestWs/src -DALIAS_ROS1_CLASS_LOADER=1 -DBoost_NAMESPACE=mwboost -DCMAKE_PREFIX_PATH=/usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1;/usr/local/MATLAB/R2024b/toolbox/ros/mlroscpp/custom_messages -DCMAKE_C_COMPILER=/usr/bin/gcc -DCMAKE_CXX_COMPILER=/usr/bin/g++ -DCATKIN_DEVEL_PREFIX=/home/droneproject/matlabTestWs/devel -DCMAKE_INSTALL_PREFIX=/home/droneproject/matlabTestWs/install -G Ninja" in "/home/droneproject/matlabTestWs/build"
+####
+####
+#### Running command: "ninja install -j8 -l8" in "/home/droneproject/matlabTestWs/build"
+####

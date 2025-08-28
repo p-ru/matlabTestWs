@@ -1,0 +1,2 @@
+greenhousehovertest
+-DALIAS_ROS1_CLASS_LOADER=1 -DBoost_NAMESPACE=mwboost -DCMAKE_PREFIX_PATH=/usr/local/MATLAB/R2024b/sys/ros1/glnxa64/ros1;/usr/local/MATLAB/R2024b/toolbox/ros/mlroscpp/custom_messages -DCMAKE_C_COMPILER=/usr/bin/gcc -DCMAKE_CXX_COMPILER=/usr/bin/g++ -DCATKIN_DEVEL_PREFIX=/home/droneproject/matlabTestWs/devel -DCMAKE_INSTALL_PREFIX=/home/droneproject/matlabTestWs/install -G Ninja
