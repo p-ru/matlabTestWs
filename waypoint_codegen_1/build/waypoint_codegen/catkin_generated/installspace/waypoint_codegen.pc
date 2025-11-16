@@ -1,0 +1,8 @@
+prefix=/home/droneproject/matlabTestWs/waypoint_codegen_1/install
+
+Name: waypoint_codegen
+Description: Description of waypoint_codegen
+Version: 1.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs nav_msgs roscpp std_msgs

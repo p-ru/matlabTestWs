@@ -1,0 +1,2 @@
+pid_v1
+-DCATKIN_DEVEL_PREFIX=/home/droneproject/matlabTestWs/controller/devel -DCMAKE_INSTALL_PREFIX=/home/droneproject/matlabTestWs/controller/install -G Unix Makefiles

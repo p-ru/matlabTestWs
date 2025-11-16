@@ -1,0 +1,6 @@
+devel_space: /home/droneproject/matlabTestWs/waypoint_codegen_1/devel
+install: false
+install_space: /home/droneproject/matlabTestWs/waypoint_codegen_1/install
+profile: default
+source_space: /home/droneproject/matlabTestWs/waypoint_codegen_1/src
+workspace: /home/droneproject/matlabTestWs/waypoint_codegen_1

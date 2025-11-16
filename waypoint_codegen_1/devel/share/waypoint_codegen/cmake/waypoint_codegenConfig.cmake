@@ -1,0 +1,1 @@
+/home/droneproject/matlabTestWs/waypoint_codegen_1/devel/.private/waypoint_codegen/share/waypoint_codegen/cmake/waypoint_codegenConfig.cmake

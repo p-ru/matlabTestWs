@@ -1,0 +1,8 @@
+prefix=/home/droneproject/matlabTestWs/controller/devel
+
+Name: pid_v1
+Description: Description of pid_v1
+Version: 1.0.0
+Cflags: -I/home/droneproject/matlabTestWs/controller/devel/include -I/home/droneproject/matlabTestWs/controller/src/pid_v1/include
+Libs: -L${prefix}/lib 
+Requires: controller_interface dynamic_reconfigure geometry_msgs hardware_interface nav_msgs pluginlib realtime_tools roscpp std_msgs tf

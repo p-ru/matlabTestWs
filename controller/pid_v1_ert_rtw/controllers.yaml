@@ -1,0 +1,11 @@
+
+#  Code generated for Simulink model 'pid_v1'.
+#  Generated on : Fri Sep 12 18:04:47 2025
+# This is a template YAML file. Modify this file to match the project requirements
+sl_pid_v1:
+  type: "pid_v1/ControllerHost"
+  joint_names: [in_test_1, out_test_1]
+# File trailer for generated code.
+#
+# [EOF]
+#

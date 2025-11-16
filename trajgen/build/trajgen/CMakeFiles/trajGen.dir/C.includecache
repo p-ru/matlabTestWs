@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/droneproject/matlabTestWs/trajgen/src/trajgen/include/trajgen/coder_posix_time.h
+
+/home/droneproject/matlabTestWs/trajgen/src/trajgen/src/coder_posix_time.c
+windows.h
+-
+coder_posix_time.h
+/home/droneproject/matlabTestWs/trajgen/src/trajgen/src/coder_posix_time.h
+math.h
+-
+stdlib.h
+-
+time.h
+-
+

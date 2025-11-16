@@ -1,0 +1,2 @@
+trajgen
+-DCATKIN_DEVEL_PREFIX=/home/droneproject/matlabTestWs/trajgen/devel -DCMAKE_INSTALL_PREFIX=/home/droneproject/matlabTestWs/trajgen/install -G Unix Makefiles

@@ -1,0 +1,16 @@
+
+<!---
+  Code generated for Simulink model 'pid_v1'.
+  Generated on : Fri Sep 12 18:04:47 2025
+ -->
+<library path="lib/libpid_v1">
+    <class name="pid_v1/ControllerHost" type="pid_v1::ControllerHost" base_class_type="controller_interface::ControllerBase">
+        <description>
+            ros_control controller hosting a Simulink model.
+        </description>
+    </class>
+</library>
+<!---
+ File trailer for generated code.
+ [EOF]
+-->

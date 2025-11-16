@@ -1,0 +1,9 @@
+\subsubsection usage Usage
+\verbatim
+<node name="pid_v1" pkg="pid_v1" type="pid_v1">
+  <param name="X_P" type="double" value="0.7" />
+  <param name="Y_P" type="double" value="0.7" />
+  <param name="Z_P" type="double" value="0.7" />
+</node>
+\endverbatim
+

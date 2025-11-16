@@ -35,3 +35,14 @@ codegen/
 # buildtool cache folder
 .buildtool/
 
+
+# Catkin/ROS build artifacts
+.catkin_tools/
+.catkin_workspace
+build/
+devel/
+install/
+logs/
+.catkin/
+*.log
+
