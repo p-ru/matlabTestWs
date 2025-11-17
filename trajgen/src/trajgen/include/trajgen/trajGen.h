@@ -7,9 +7,9 @@
  *
  * Code generation for model "trajGen".
  *
- * Model version              : 1.12
+ * Model version              : 1.13
  * Simulink Coder version : 24.2 (R2024b) 21-Jun-2024
- * C++ source code generated on : Tue Nov 18 01:55:20 2025
+ * C++ source code generated on : Tue Nov 18 04:09:10 2025
  *
  * Target selection: ert.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -120,11 +120,11 @@ struct B_trajGen_T {
   real_T Sum_d;                        /* '<S111>/Sum' */
   real_T Sum_f;                        /* '<S163>/Sum' */
   real_T delT;
-  real_T FilterCoefficient;            /* '<S53>/Filter Coefficient' */
-  real_T IntegralGain;                 /* '<S47>/Integral Gain' */
-  real_T FilterCoefficient_m;          /* '<S105>/Filter Coefficient' */
-  real_T IntegralGain_j;               /* '<S99>/Integral Gain' */
-  real_T FilterCoefficient_g;          /* '<S157>/Filter Coefficient' */
+  real_T Filter_m;                     /* '<S149>/Filter' */
+  real_T UngainTsProdOut;              /* '<S64>/Ungain*Ts Prod Out' */
+  real_T IntegralGain;                 /* '<S151>/Integral Gain' */
+  real_T UngainTsProdOut_k;            /* '<S116>/Ungain*Ts Prod Out' */
+  real_T FilterCoefficient;            /* '<S157>/Filter Coefficient' */
   real_T tmp1;
   real_T prod;
   real_T lowerright_d;
@@ -346,8 +346,8 @@ extern volatile boolean_T runModel;
  * '<S60>'  : 'trajGen/Subsystem/X/Sum Fdbk/Disabled'
  * '<S61>'  : 'trajGen/Subsystem/X/Tracking Mode/Disabled'
  * '<S62>'  : 'trajGen/Subsystem/X/Tracking Mode Sum/Passthrough'
- * '<S63>'  : 'trajGen/Subsystem/X/Tsamp - Integral/TsSignalSpecification'
- * '<S64>'  : 'trajGen/Subsystem/X/Tsamp - Ngain/Passthrough'
+ * '<S63>'  : 'trajGen/Subsystem/X/Tsamp - Integral/External Ts'
+ * '<S64>'  : 'trajGen/Subsystem/X/Tsamp - Ngain/External Ts'
  * '<S65>'  : 'trajGen/Subsystem/X/postSat Signal/Forward_Path'
  * '<S66>'  : 'trajGen/Subsystem/X/preInt Signal/Internal PreInt'
  * '<S67>'  : 'trajGen/Subsystem/X/preSat Signal/Forward_Path'
@@ -398,8 +398,8 @@ extern volatile boolean_T runModel;
  * '<S112>' : 'trajGen/Subsystem/Y/Sum Fdbk/Disabled'
  * '<S113>' : 'trajGen/Subsystem/Y/Tracking Mode/Disabled'
  * '<S114>' : 'trajGen/Subsystem/Y/Tracking Mode Sum/Passthrough'
- * '<S115>' : 'trajGen/Subsystem/Y/Tsamp - Integral/TsSignalSpecification'
- * '<S116>' : 'trajGen/Subsystem/Y/Tsamp - Ngain/Passthrough'
+ * '<S115>' : 'trajGen/Subsystem/Y/Tsamp - Integral/External Ts'
+ * '<S116>' : 'trajGen/Subsystem/Y/Tsamp - Ngain/External Ts'
  * '<S117>' : 'trajGen/Subsystem/Y/postSat Signal/Forward_Path'
  * '<S118>' : 'trajGen/Subsystem/Y/preInt Signal/Internal PreInt'
  * '<S119>' : 'trajGen/Subsystem/Y/preSat Signal/Forward_Path'
@@ -450,8 +450,8 @@ extern volatile boolean_T runModel;
  * '<S164>' : 'trajGen/Subsystem/Z/Sum Fdbk/Disabled'
  * '<S165>' : 'trajGen/Subsystem/Z/Tracking Mode/Disabled'
  * '<S166>' : 'trajGen/Subsystem/Z/Tracking Mode Sum/Passthrough'
- * '<S167>' : 'trajGen/Subsystem/Z/Tsamp - Integral/TsSignalSpecification'
- * '<S168>' : 'trajGen/Subsystem/Z/Tsamp - Ngain/Passthrough'
+ * '<S167>' : 'trajGen/Subsystem/Z/Tsamp - Integral/External Ts'
+ * '<S168>' : 'trajGen/Subsystem/Z/Tsamp - Ngain/External Ts'
  * '<S169>' : 'trajGen/Subsystem/Z/postSat Signal/Forward_Path'
  * '<S170>' : 'trajGen/Subsystem/Z/preInt Signal/Internal PreInt'
  * '<S171>' : 'trajGen/Subsystem/Z/preSat Signal/Forward_Path'

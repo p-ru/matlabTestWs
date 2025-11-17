@@ -73,7 +73,7 @@ int main(int argc, char **argv)
   trajGen_initialize();
 
   /* Call RTOS Initialization function */
-  myRTOSInit(0.001, 0);
+  myRTOSInit(0.01, 0);
 
   /* Wait for stop semaphore */
   sem_wait(&stopSem);

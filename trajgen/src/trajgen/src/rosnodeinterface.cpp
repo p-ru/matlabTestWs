@@ -3,9 +3,9 @@
 //
 // Code generated for Simulink model 'trajGen'.
 //
-// Model version                  : 1.12
+// Model version                  : 1.13
 // Simulink Coder version         : 24.2 (R2024b) 21-Jun-2024
-// C/C++ source code generated on : Tue Nov 18 01:55:30 2025
+// C/C++ source code generated on : Tue Nov 18 04:09:21 2025
 //
 
 #ifdef _MSC_VER
@@ -83,7 +83,7 @@ namespace ros
 
         // create scheduler timer to run the scheduler callback
         mSchedulerTimer = std::make_shared<ros::WallTimer>
-          (mNode->createWallTimer(ros::WallDuration(1000000*1e-9),
+          (mNode->createWallTimer(ros::WallDuration(10000000*1e-9),
             boost::bind(&NodeInterface::schedulerCallback, this, _1)));
         mSchedulerTimer->start();
       } catch (std::exception& ex) {

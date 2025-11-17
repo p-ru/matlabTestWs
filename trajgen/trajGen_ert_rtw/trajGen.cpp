@@ -7,9 +7,9 @@
  *
  * Code generation for model "trajGen".
  *
- * Model version              : 1.12
+ * Model version              : 1.13
  * Simulink Coder version : 24.2 (R2024b) 21-Jun-2024
- * C++ source code generated on : Tue Nov 18 01:55:20 2025
+ * C++ source code generated on : Tue Nov 18 04:09:10 2025
  *
  * Target selection: ert.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -2111,10 +2111,10 @@ void trajGen_step(void)
     if (guard1) {
       MinJerkPolyTraj_computePPandTim(&trajGen_DW.obj,
         trajGen_B.rtb_Transpose_tmp, trajGen_B.timePoints, trajGen_B.ppMatrix,
-        trajGen_B.r, &trajGen_B.delT, &trajGen_B.FilterCoefficient,
-        &trajGen_B.IntegralGain);
-      trajGen_DW.obj.SingularityStatus = trajGen_B.IntegralGain;
-      trajGen_DW.obj.MaxTimeStatus = trajGen_B.FilterCoefficient;
+        trajGen_B.r, &trajGen_B.delT, &trajGen_B.Filter_m,
+        &trajGen_B.UngainTsProdOut);
+      trajGen_DW.obj.SingularityStatus = trajGen_B.UngainTsProdOut;
+      trajGen_DW.obj.MaxTimeStatus = trajGen_B.Filter_m;
       trajGen_DW.obj.MaxIterStatus = trajGen_B.delT;
       trajGen_DW.obj.TimeOfArrZero.set_size(1, trajGen_B.r.size(1));
       trajGen_B.loop_ub = trajGen_B.r.size(0) * trajGen_B.r.size(1) - 1;
@@ -2157,20 +2157,19 @@ void trajGen_step(void)
         [0];
       for (trajGen_B.b_k = 0; trajGen_B.b_k < 3; trajGen_B.b_k++) {
         if (std::isnan(trajGen_B.delT)) {
-          trajGen_B.FilterCoefficient = (rtNaN);
+          trajGen_B.Filter_m = (rtNaN);
         } else {
-          trajGen_B.FilterCoefficient = trajGen_DW.obj.PPMatrix
+          trajGen_B.Filter_m = trajGen_DW.obj.PPMatrix
             [(trajGen_DW.obj.PPMatrix.size(0) << 3) * trajGen_B.b_k];
           for (trajGen_B.loop_ub = 0; trajGen_B.loop_ub < 7; trajGen_B.loop_ub++)
           {
-            trajGen_B.FilterCoefficient = trajGen_DW.obj.PPMatrix
-              [(trajGen_B.loop_ub + 1) * trajGen_DW.obj.PPMatrix.size(0) +
-              (trajGen_DW.obj.PPMatrix.size(0) << 3) * trajGen_B.b_k] +
-              trajGen_B.delT * trajGen_B.FilterCoefficient;
+            trajGen_B.Filter_m = trajGen_DW.obj.PPMatrix[(trajGen_B.loop_ub + 1)
+              * trajGen_DW.obj.PPMatrix.size(0) + (trajGen_DW.obj.PPMatrix.size
+              (0) << 3) * trajGen_B.b_k] + trajGen_B.delT * trajGen_B.Filter_m;
           }
         }
 
-        trajGen_B.Transpose1[trajGen_B.b_k] = trajGen_B.FilterCoefficient;
+        trajGen_B.Transpose1[trajGen_B.b_k] = trajGen_B.Filter_m;
       }
     }
 
@@ -2195,23 +2194,23 @@ void trajGen_step(void)
      *  Gain: '<S43>/Derivative Gain'
      *  Sum: '<S45>/SumD'
      */
-    trajGen_B.FilterCoefficient = (0.08 * trajGen_B.delT -
-      trajGen_DW.Filter_DSTATE) * 3.0;
+    trajGen_B.Filter_m = (0.08 * trajGen_B.delT - trajGen_DW.Filter_DSTATE) *
+      3.0;
 
     /* Sum: '<S59>/Sum' incorporates:
      *  DiscreteIntegrator: '<S50>/Integrator'
      *  Gain: '<S55>/Proportional Gain'
      */
     trajGen_B.Sum = (0.7 * trajGen_B.delT + trajGen_DW.Integrator_DSTATE) +
-      trajGen_B.FilterCoefficient;
+      trajGen_B.Filter_m;
 
-    /* Gain: '<S47>/Integral Gain' */
-    trajGen_B.IntegralGain = 0.0 * trajGen_B.delT;
+    /* Product: '<S64>/Ungain*Ts Prod Out' */
+    trajGen_B.UngainTsProdOut = trajGen_B.Filter_m * 0.0;
 
     /* Sum: '<S5>/Sum1' incorporates:
      *  MATLABSystem: '<S5>/Minimum Jerk Polynomial Trajectory'
      */
-    trajGen_B.delT = trajGen_B.Transpose1[1] -
+    trajGen_B.Filter_m = trajGen_B.Transpose1[1] -
       trajGen_B.In1.Pose.Pose.Position.Y;
 
     /* Gain: '<S105>/Filter Coefficient' incorporates:
@@ -2219,23 +2218,23 @@ void trajGen_step(void)
      *  Gain: '<S95>/Derivative Gain'
      *  Sum: '<S97>/SumD'
      */
-    trajGen_B.FilterCoefficient_m = (0.08 * trajGen_B.delT -
+    trajGen_B.IntegralGain = (0.08 * trajGen_B.Filter_m -
       trajGen_DW.Filter_DSTATE_m) * 3.0;
 
     /* Sum: '<S111>/Sum' incorporates:
      *  DiscreteIntegrator: '<S102>/Integrator'
      *  Gain: '<S107>/Proportional Gain'
      */
-    trajGen_B.Sum_d = (0.7 * trajGen_B.delT + trajGen_DW.Integrator_DSTATE_p) +
-      trajGen_B.FilterCoefficient_m;
+    trajGen_B.Sum_d = (0.7 * trajGen_B.Filter_m + trajGen_DW.Integrator_DSTATE_p)
+      + trajGen_B.IntegralGain;
 
-    /* Gain: '<S99>/Integral Gain' */
-    trajGen_B.IntegralGain_j = 0.0 * trajGen_B.delT;
+    /* Product: '<S116>/Ungain*Ts Prod Out' */
+    trajGen_B.UngainTsProdOut_k = trajGen_B.IntegralGain * 0.0;
 
     /* Sum: '<S5>/Sum2' incorporates:
      *  MATLABSystem: '<S5>/Minimum Jerk Polynomial Trajectory'
      */
-    trajGen_B.delT = trajGen_B.Transpose1[2] -
+    trajGen_B.IntegralGain = trajGen_B.Transpose1[2] -
       trajGen_B.In1.Pose.Pose.Position.Z;
 
     /* Gain: '<S157>/Filter Coefficient' incorporates:
@@ -2243,42 +2242,52 @@ void trajGen_step(void)
      *  Gain: '<S147>/Derivative Gain'
      *  Sum: '<S149>/SumD'
      */
-    trajGen_B.FilterCoefficient_g = (0.08 * trajGen_B.delT -
+    trajGen_B.FilterCoefficient = (0.08 * trajGen_B.IntegralGain -
       trajGen_DW.Filter_DSTATE_d) * 3.0;
 
     /* Sum: '<S163>/Sum' incorporates:
      *  DiscreteIntegrator: '<S154>/Integrator'
      *  Gain: '<S159>/Proportional Gain'
      */
-    trajGen_B.Sum_f = (0.7 * trajGen_B.delT + trajGen_DW.Integrator_DSTATE_g) +
-      trajGen_B.FilterCoefficient_g;
+    trajGen_B.Sum_f = (0.7 * trajGen_B.IntegralGain +
+                       trajGen_DW.Integrator_DSTATE_g) +
+      trajGen_B.FilterCoefficient;
 
     /* Update for DiscreteIntegrator: '<S5>/Discrete-Time Integrator' incorporates:
      *  Constant: '<S5>/Constant1'
      */
-    trajGen_DW.DiscreteTimeIntegrator_DSTATE += 0.001;
+    trajGen_DW.DiscreteTimeIntegrator_DSTATE += 0.01;
     trajGen_DW.DiscreteTimeIntegrator_PrevRese = static_cast<int8_T>
       (rtb_FixPtRelationalOperator);
 
     /* Update for DiscreteIntegrator: '<S45>/Filter' */
-    trajGen_DW.Filter_DSTATE += 0.001 * trajGen_B.FilterCoefficient;
+    trajGen_DW.Filter_DSTATE += trajGen_B.UngainTsProdOut;
 
-    /* Update for DiscreteIntegrator: '<S50>/Integrator' */
-    trajGen_DW.Integrator_DSTATE += 0.001 * trajGen_B.IntegralGain;
+    /* Update for DiscreteIntegrator: '<S50>/Integrator' incorporates:
+     *  Gain: '<S47>/Integral Gain'
+     *  Product: '<S63>/Uintegral*Ts Prod Out'
+     */
+    trajGen_DW.Integrator_DSTATE += 0.0 * trajGen_B.delT * 0.0;
 
     /* Update for DiscreteIntegrator: '<S97>/Filter' */
-    trajGen_DW.Filter_DSTATE_m += 0.001 * trajGen_B.FilterCoefficient_m;
+    trajGen_DW.Filter_DSTATE_m += trajGen_B.UngainTsProdOut_k;
 
-    /* Update for DiscreteIntegrator: '<S102>/Integrator' */
-    trajGen_DW.Integrator_DSTATE_p += 0.001 * trajGen_B.IntegralGain_j;
+    /* Update for DiscreteIntegrator: '<S102>/Integrator' incorporates:
+     *  Gain: '<S99>/Integral Gain'
+     *  Product: '<S115>/Uintegral*Ts Prod Out'
+     */
+    trajGen_DW.Integrator_DSTATE_p += 0.0 * trajGen_B.Filter_m * 0.0;
 
-    /* Update for DiscreteIntegrator: '<S149>/Filter' */
-    trajGen_DW.Filter_DSTATE_d += 0.001 * trajGen_B.FilterCoefficient_g;
+    /* Update for DiscreteIntegrator: '<S149>/Filter' incorporates:
+     *  Product: '<S168>/Ungain*Ts Prod Out'
+     */
+    trajGen_DW.Filter_DSTATE_d += trajGen_B.FilterCoefficient * 0.0;
 
     /* Update for DiscreteIntegrator: '<S154>/Integrator' incorporates:
      *  Gain: '<S151>/Integral Gain'
+     *  Product: '<S167>/Uintegral*Ts Prod Out'
      */
-    trajGen_DW.Integrator_DSTATE_g += 0.0 * trajGen_B.delT * 0.001;
+    trajGen_DW.Integrator_DSTATE_g += 0.0 * trajGen_B.IntegralGain * 0.0;
   } else if (trajGen_DW.Subsystem_MODE) {
     /* Disable for Sum: '<S59>/Sum' incorporates:
      *  Outport: '<S5>/Out1'
