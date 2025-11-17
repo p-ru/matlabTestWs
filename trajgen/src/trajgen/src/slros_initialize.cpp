@@ -6,8 +6,11 @@ const std::string SLROSNodeName = "trajGen";
 // For Block trajGen/Subscribe
 SimulinkSubscriber<geometry_msgs::Point, SL_Bus_trajGen_geometry_msgs_Point> Sub_trajGen_180;
 
+// For Block trajGen/Subscribe1
+SimulinkSubscriber<std_msgs::Bool, SL_Bus_trajGen_std_msgs_Bool> Sub_trajGen_254;
+
 // For Block trajGen/position reading
-SimulinkSubscriber<nav_msgs::Odometry, SL_Bus_trajGen_nav_msgs_Odometry> Sub_trajGen_56;
+SimulinkSubscriber<nav_msgs::Odometry, SL_Bus_trajGen_nav_msgs_Odometry> Sub_trajGen_229;
 
 // For Block trajGen/Publish
 SimulinkPublisher<geometry_msgs::Twist, SL_Bus_trajGen_geometry_msgs_Twist> Pub_trajGen_43;

@@ -268,7 +268,7 @@ if __name__ == '__main__':
 
         if not args.local:
             # environment at generation time
-            CMAKE_PREFIX_PATH = r'/home/droneproject/BT_projects/devel;/home/droneproject/catkin_ws_kinetic/devel;/home/droneproject/catkin_ws/devel;/home/droneproject/workspace/catkin_ws_ov/devel;/home/droneproject/tagslam_root/devel;/opt/ros/noetic'.split(';')
+            CMAKE_PREFIX_PATH = r'/home/droneproject/matlabTestWs/trajgen/devel;/home/droneproject/BT_projects/devel;/home/droneproject/catkin_ws_kinetic/devel;/home/droneproject/catkin_ws/devel;/home/droneproject/workspace/catkin_ws_ov/devel;/home/droneproject/tagslam_root/devel;/opt/ros/noetic'.split(';')
         else:
             # don't consider any other prefix path than this one
             CMAKE_PREFIX_PATH = []

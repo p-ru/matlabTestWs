@@ -11,7 +11,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/trajGen.dir/src/slros_generic_param.cpp.o"
   "CMakeFiles/trajGen.dir/src/slros_initialize.cpp.o"
   "CMakeFiles/trajGen.dir/src/trajGen.cpp.o"
-  "CMakeFiles/trajGen.dir/src/trajGen_data.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

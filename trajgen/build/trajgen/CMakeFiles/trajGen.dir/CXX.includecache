@@ -97,6 +97,8 @@ nav_msgs/Odometry.h
 -
 ros/time.h
 -
+std_msgs/Bool.h
+-
 std_msgs/Header.h
 -
 trajGen_types.h
@@ -187,8 +189,6 @@ multiword_types.h
 /home/droneproject/matlabTestWs/trajgen/src/trajgen/include/trajgen/multiword_types.h
 trajGen_types.h
 /home/droneproject/matlabTestWs/trajgen/src/trajgen/include/trajgen/trajGen_types.h
-trajGen.h
-/home/droneproject/matlabTestWs/trajgen/src/trajgen/include/trajgen/trajGen.h
 rtw_continuous.h
 /home/droneproject/matlabTestWs/trajgen/src/trajgen/include/trajgen/rtw_continuous.h
 rtw_solver.h
@@ -199,8 +199,6 @@ rtwtypes.h
 /home/droneproject/matlabTestWs/trajgen/src/trajgen/include/trajgen/rtwtypes.h
 coder_array.h
 /home/droneproject/matlabTestWs/trajgen/src/trajgen/include/trajgen/coder_array.h
-coder_posix_time.h
-/home/droneproject/matlabTestWs/trajgen/src/trajgen/include/trajgen/coder_posix_time.h
 
 /home/droneproject/matlabTestWs/trajgen/src/trajgen/src/main.cpp
 stdio.h
@@ -248,10 +246,6 @@ cmath
 slros_busmsg_conversion.h
 /home/droneproject/matlabTestWs/trajgen/src/trajgen/src/slros_busmsg_conversion.h
 
-/home/droneproject/matlabTestWs/trajgen/src/trajgen/src/slros_generic_param.cpp
-slros_generic_param.h
-/home/droneproject/matlabTestWs/trajgen/src/trajgen/src/slros_generic_param.h
-
 /home/droneproject/matlabTestWs/trajgen/src/trajgen/src/slros_initialize.cpp
 slros_initialize.h
 /home/droneproject/matlabTestWs/trajgen/src/trajgen/src/slros_initialize.h
@@ -269,16 +263,10 @@ cstring
 -
 cmath
 -
-coder_posix_time.h
-/home/droneproject/matlabTestWs/trajgen/src/trajgen/src/coder_posix_time.h
 trajGen_private.h
 /home/droneproject/matlabTestWs/trajgen/src/trajgen/src/trajGen_private.h
 cmath
 /home/droneproject/matlabTestWs/trajgen/src/trajgen/src/cmath
-
-/home/droneproject/matlabTestWs/trajgen/src/trajgen/src/trajGen_data.cpp
-trajGen.h
-/home/droneproject/matlabTestWs/trajgen/src/trajgen/src/trajGen.h
 
 /opt/ros/noetic/include/geometry_msgs/Point.h
 string
@@ -1123,6 +1111,22 @@ ros/forwards.h
 /opt/ros/noetic/include/ros/ros/forwards.h
 
 /opt/ros/noetic/include/rosconsole/macros_generated.h
+
+/opt/ros/noetic/include/std_msgs/Bool.h
+string
+-
+vector
+-
+memory
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
 
 /opt/ros/noetic/include/std_msgs/Header.h
 string

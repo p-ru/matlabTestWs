@@ -164,22 +164,9 @@ trajgen/CMakeFiles/trajGen.dir/src/trajGen.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/trajGen.dir/src/trajGen.cpp.s"
 	cd /home/droneproject/matlabTestWs/trajgen/build/trajgen && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/droneproject/matlabTestWs/trajgen/src/trajgen/src/trajGen.cpp -o CMakeFiles/trajGen.dir/src/trajGen.cpp.s
 
-trajgen/CMakeFiles/trajGen.dir/src/trajGen_data.cpp.o: trajgen/CMakeFiles/trajGen.dir/flags.make
-trajgen/CMakeFiles/trajGen.dir/src/trajGen_data.cpp.o: /home/droneproject/matlabTestWs/trajgen/src/trajgen/src/trajGen_data.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/droneproject/matlabTestWs/trajgen/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object trajgen/CMakeFiles/trajGen.dir/src/trajGen_data.cpp.o"
-	cd /home/droneproject/matlabTestWs/trajgen/build/trajgen && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/trajGen.dir/src/trajGen_data.cpp.o -c /home/droneproject/matlabTestWs/trajgen/src/trajgen/src/trajGen_data.cpp
-
-trajgen/CMakeFiles/trajGen.dir/src/trajGen_data.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/trajGen.dir/src/trajGen_data.cpp.i"
-	cd /home/droneproject/matlabTestWs/trajgen/build/trajgen && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/droneproject/matlabTestWs/trajgen/src/trajgen/src/trajGen_data.cpp > CMakeFiles/trajGen.dir/src/trajGen_data.cpp.i
-
-trajgen/CMakeFiles/trajGen.dir/src/trajGen_data.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/trajGen.dir/src/trajGen_data.cpp.s"
-	cd /home/droneproject/matlabTestWs/trajgen/build/trajgen && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/droneproject/matlabTestWs/trajgen/src/trajgen/src/trajGen_data.cpp -o CMakeFiles/trajGen.dir/src/trajGen_data.cpp.s
-
 trajgen/CMakeFiles/trajGen.dir/src/coder_posix_time.c.o: trajgen/CMakeFiles/trajGen.dir/flags.make
 trajgen/CMakeFiles/trajGen.dir/src/coder_posix_time.c.o: /home/droneproject/matlabTestWs/trajgen/src/trajgen/src/coder_posix_time.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/droneproject/matlabTestWs/trajgen/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object trajgen/CMakeFiles/trajGen.dir/src/coder_posix_time.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/droneproject/matlabTestWs/trajgen/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object trajgen/CMakeFiles/trajGen.dir/src/coder_posix_time.c.o"
 	cd /home/droneproject/matlabTestWs/trajgen/build/trajgen && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/trajGen.dir/src/coder_posix_time.c.o   -c /home/droneproject/matlabTestWs/trajgen/src/trajgen/src/coder_posix_time.c
 
 trajgen/CMakeFiles/trajGen.dir/src/coder_posix_time.c.i: cmake_force
@@ -192,7 +179,7 @@ trajgen/CMakeFiles/trajGen.dir/src/coder_posix_time.c.s: cmake_force
 
 trajgen/CMakeFiles/trajGen.dir/src/slros_generic_param.cpp.o: trajgen/CMakeFiles/trajGen.dir/flags.make
 trajgen/CMakeFiles/trajGen.dir/src/slros_generic_param.cpp.o: /home/droneproject/matlabTestWs/trajgen/src/trajgen/src/slros_generic_param.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/droneproject/matlabTestWs/trajgen/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object trajgen/CMakeFiles/trajGen.dir/src/slros_generic_param.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/droneproject/matlabTestWs/trajgen/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object trajgen/CMakeFiles/trajGen.dir/src/slros_generic_param.cpp.o"
 	cd /home/droneproject/matlabTestWs/trajgen/build/trajgen && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/trajGen.dir/src/slros_generic_param.cpp.o -c /home/droneproject/matlabTestWs/trajgen/src/trajgen/src/slros_generic_param.cpp
 
 trajgen/CMakeFiles/trajGen.dir/src/slros_generic_param.cpp.i: cmake_force
@@ -213,7 +200,6 @@ trajGen_OBJECTS = \
 "CMakeFiles/trajGen.dir/src/slros_busmsg_conversion.cpp.o" \
 "CMakeFiles/trajGen.dir/src/slros_initialize.cpp.o" \
 "CMakeFiles/trajGen.dir/src/trajGen.cpp.o" \
-"CMakeFiles/trajGen.dir/src/trajGen_data.cpp.o" \
 "CMakeFiles/trajGen.dir/src/coder_posix_time.c.o" \
 "CMakeFiles/trajGen.dir/src/slros_generic_param.cpp.o"
 
@@ -228,7 +214,6 @@ trajGen_EXTERNAL_OBJECTS =
 /home/droneproject/matlabTestWs/trajgen/devel/lib/trajgen/trajGen: trajgen/CMakeFiles/trajGen.dir/src/slros_busmsg_conversion.cpp.o
 /home/droneproject/matlabTestWs/trajgen/devel/lib/trajgen/trajGen: trajgen/CMakeFiles/trajGen.dir/src/slros_initialize.cpp.o
 /home/droneproject/matlabTestWs/trajgen/devel/lib/trajgen/trajGen: trajgen/CMakeFiles/trajGen.dir/src/trajGen.cpp.o
-/home/droneproject/matlabTestWs/trajgen/devel/lib/trajgen/trajGen: trajgen/CMakeFiles/trajGen.dir/src/trajGen_data.cpp.o
 /home/droneproject/matlabTestWs/trajgen/devel/lib/trajgen/trajGen: trajgen/CMakeFiles/trajGen.dir/src/coder_posix_time.c.o
 /home/droneproject/matlabTestWs/trajgen/devel/lib/trajgen/trajGen: trajgen/CMakeFiles/trajGen.dir/src/slros_generic_param.cpp.o
 /home/droneproject/matlabTestWs/trajgen/devel/lib/trajgen/trajGen: trajgen/CMakeFiles/trajGen.dir/build.make
@@ -251,7 +236,7 @@ trajGen_EXTERNAL_OBJECTS =
 /home/droneproject/matlabTestWs/trajgen/devel/lib/trajgen/trajGen: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
 /home/droneproject/matlabTestWs/trajgen/devel/lib/trajgen/trajGen: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
 /home/droneproject/matlabTestWs/trajgen/devel/lib/trajgen/trajGen: trajgen/CMakeFiles/trajGen.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/droneproject/matlabTestWs/trajgen/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable /home/droneproject/matlabTestWs/trajgen/devel/lib/trajgen/trajGen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/droneproject/matlabTestWs/trajgen/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable /home/droneproject/matlabTestWs/trajgen/devel/lib/trajgen/trajGen"
 	cd /home/droneproject/matlabTestWs/trajgen/build/trajgen && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/trajGen.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

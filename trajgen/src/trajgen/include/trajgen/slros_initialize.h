@@ -11,8 +11,11 @@ extern const std::string SLROSNodeName;
 // For Block trajGen/Subscribe
 extern SimulinkSubscriber<geometry_msgs::Point, SL_Bus_trajGen_geometry_msgs_Point> Sub_trajGen_180;
 
+// For Block trajGen/Subscribe1
+extern SimulinkSubscriber<std_msgs::Bool, SL_Bus_trajGen_std_msgs_Bool> Sub_trajGen_254;
+
 // For Block trajGen/position reading
-extern SimulinkSubscriber<nav_msgs::Odometry, SL_Bus_trajGen_nav_msgs_Odometry> Sub_trajGen_56;
+extern SimulinkSubscriber<nav_msgs::Odometry, SL_Bus_trajGen_nav_msgs_Odometry> Sub_trajGen_229;
 
 // For Block trajGen/Publish
 extern SimulinkPublisher<geometry_msgs::Twist, SL_Bus_trajGen_geometry_msgs_Twist> Pub_trajGen_43;

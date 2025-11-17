@@ -905,33 +905,6 @@ src/trajGen.cpp.s:
 	cd /home/droneproject/matlabTestWs/trajgen/build && $(MAKE) -f trajgen/CMakeFiles/trajGen.dir/build.make trajgen/CMakeFiles/trajGen.dir/src/trajGen.cpp.s
 .PHONY : src/trajGen.cpp.s
 
-src/trajGen_data.o: src/trajGen_data.cpp.o
-
-.PHONY : src/trajGen_data.o
-
-# target to build an object file
-src/trajGen_data.cpp.o:
-	cd /home/droneproject/matlabTestWs/trajgen/build && $(MAKE) -f trajgen/CMakeFiles/trajGen.dir/build.make trajgen/CMakeFiles/trajGen.dir/src/trajGen_data.cpp.o
-.PHONY : src/trajGen_data.cpp.o
-
-src/trajGen_data.i: src/trajGen_data.cpp.i
-
-.PHONY : src/trajGen_data.i
-
-# target to preprocess a source file
-src/trajGen_data.cpp.i:
-	cd /home/droneproject/matlabTestWs/trajgen/build && $(MAKE) -f trajgen/CMakeFiles/trajGen.dir/build.make trajgen/CMakeFiles/trajGen.dir/src/trajGen_data.cpp.i
-.PHONY : src/trajGen_data.cpp.i
-
-src/trajGen_data.s: src/trajGen_data.cpp.s
-
-.PHONY : src/trajGen_data.s
-
-# target to generate assembly for a file
-src/trajGen_data.cpp.s:
-	cd /home/droneproject/matlabTestWs/trajgen/build && $(MAKE) -f trajgen/CMakeFiles/trajGen.dir/build.make trajgen/CMakeFiles/trajGen.dir/src/trajGen_data.cpp.s
-.PHONY : src/trajGen_data.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1006,9 +979,6 @@ help:
 	@echo "... src/trajGen.o"
 	@echo "... src/trajGen.i"
 	@echo "... src/trajGen.s"
-	@echo "... src/trajGen_data.o"
-	@echo "... src/trajGen_data.i"
-	@echo "... src/trajGen_data.s"
 .PHONY : help
 
 
