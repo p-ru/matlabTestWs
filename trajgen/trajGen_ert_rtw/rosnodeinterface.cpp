@@ -3,9 +3,9 @@
 //
 // Code generated for Simulink model 'trajGen'.
 //
-// Model version                  : 1.13
+// Model version                  : 1.16
 // Simulink Coder version         : 24.2 (R2024b) 21-Jun-2024
-// C/C++ source code generated on : Tue Nov 18 04:09:21 2025
+// C/C++ source code generated on : Fri Nov 21 00:51:48 2025
 //
 
 #ifdef _MSC_VER

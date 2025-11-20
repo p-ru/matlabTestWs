@@ -22,6 +22,7 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
   geometry_msgs
   nav_msgs
+  std_srvs
 )
 ## The catkin_package macro generates cmake config files for your package
 ## Declare things to be passed to dependent projects
@@ -35,6 +36,7 @@ catkin_package(
   nav_msgs
   roscpp
   std_msgs
+  std_srvs
   INCLUDE_DIRS include
 )
 ###########
@@ -130,4 +132,4 @@ add_custom_command(
                    ARGS -E copy ${PROJECT_SOURCE_DIR}/src/${file_i} ${CATKIN_DEVEL_PREFIX}/trajGen_ert_rtw/${file_i}
 				   )
 endforeach(file_i)
-# Generated on Tue Nov 18 04:09:28 2025
+# Generated on Fri Nov 21 00:51:57 2025

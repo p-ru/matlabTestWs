@@ -11,9 +11,11 @@
   <build_depend>nav_msgs</build_depend>
   <build_depend>roscpp</build_depend>
   <build_depend>std_msgs</build_depend>
+  <build_depend>std_srvs</build_depend>
   <exec_depend>geometry_msgs</exec_depend>
   <exec_depend>nav_msgs</exec_depend>
   <exec_depend>roscpp</exec_depend>
   <exec_depend>std_msgs</exec_depend>
+  <exec_depend>std_srvs</exec_depend>
 </package>
-<!-- Generated on Tue Nov 18 04:09:28 2025 -->
+<!-- Generated on Fri Nov 21 00:51:57 2025 -->

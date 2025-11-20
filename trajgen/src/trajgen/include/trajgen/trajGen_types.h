@@ -7,9 +7,9 @@
  *
  * Code generation for model "trajGen".
  *
- * Model version              : 1.13
+ * Model version              : 1.16
  * Simulink Coder version : 24.2 (R2024b) 21-Jun-2024
- * C++ source code generated on : Tue Nov 18 04:09:10 2025
+ * C++ source code generated on : Fri Nov 21 00:51:34 2025
  *
  * Target selection: ert.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -22,6 +22,39 @@
 #define trajGen_types_h_
 #include "rtwtypes.h"
 #include "coder_array.h"
+#ifndef DEFINED_TYPEDEF_FOR_SL_Bus_trajGen_std_srvs_SetBoolRequest_
+#define DEFINED_TYPEDEF_FOR_SL_Bus_trajGen_std_srvs_SetBoolRequest_
+
+struct SL_Bus_trajGen_std_srvs_SetBoolRequest
+{
+  boolean_T Data;
+};
+
+#endif
+
+#ifndef DEFINED_TYPEDEF_FOR_SL_Bus_ROSVariableLengthArrayInfo_
+#define DEFINED_TYPEDEF_FOR_SL_Bus_ROSVariableLengthArrayInfo_
+
+struct SL_Bus_ROSVariableLengthArrayInfo
+{
+  uint32_T CurrentLength;
+  uint32_T ReceivedLength;
+};
+
+#endif
+
+#ifndef DEFINED_TYPEDEF_FOR_SL_Bus_trajGen_std_srvs_SetBoolResponse_
+#define DEFINED_TYPEDEF_FOR_SL_Bus_trajGen_std_srvs_SetBoolResponse_
+
+struct SL_Bus_trajGen_std_srvs_SetBoolResponse
+{
+  boolean_T Success;
+  uint8_T Message[128];
+  SL_Bus_ROSVariableLengthArrayInfo Message_SL_Info;
+};
+
+#endif
+
 #ifndef DEFINED_TYPEDEF_FOR_SL_Bus_trajGen_geometry_msgs_Vector3_
 #define DEFINED_TYPEDEF_FOR_SL_Bus_trajGen_geometry_msgs_Vector3_
 
@@ -74,17 +107,6 @@ struct SL_Bus_trajGen_ros_time_Time
 {
   real_T Sec;
   real_T Nsec;
-};
-
-#endif
-
-#ifndef DEFINED_TYPEDEF_FOR_SL_Bus_ROSVariableLengthArrayInfo_
-#define DEFINED_TYPEDEF_FOR_SL_Bus_ROSVariableLengthArrayInfo_
-
-struct SL_Bus_ROSVariableLengthArrayInfo
-{
-  uint32_T CurrentLength;
-  uint32_T ReceivedLength;
 };
 
 #endif
@@ -162,6 +184,39 @@ struct SL_Bus_trajGen_nav_msgs_Odometry
 
 #endif
 
+#ifndef enum_ros_slros_internal_block_ServiceCallErrorCode
+#define enum_ros_slros_internal_block_ServiceCallErrorCode
+
+enum ros_slros_internal_block_ServiceCallErrorCode
+{
+  SLSuccess = 0,                       /* Default value */
+  SLConnectionTimeout,
+  SLCallFailure,
+  SLOtherError
+};
+
+#endif                  /* enum_ros_slros_internal_block_ServiceCallErrorCode */
+
+#ifndef typedef_c_ros_slros_internal_block_Se_T
+#define typedef_c_ros_slros_internal_block_Se_T
+
+using c_ros_slros_internal_block_Se_T =
+  ros_slros_internal_block_ServiceCallErrorCode;
+
+#endif                             /* typedef_c_ros_slros_internal_block_Se_T */
+
+#ifndef struct_ros_slroscpp_internal_block_S_T
+#define struct_ros_slroscpp_internal_block_S_T
+
+struct ros_slroscpp_internal_block_S_T
+{
+  boolean_T matlabCodegenIsDeleted;
+  int32_T isInitialized;
+  boolean_T isSetupComplete;
+};
+
+#endif                              /* struct_ros_slroscpp_internal_block_S_T */
+
 #ifndef struct_e_robotics_slcore_internal_bl_T
 #define struct_e_robotics_slcore_internal_bl_T
 
@@ -197,17 +252,17 @@ struct ros_slroscpp_internal_block_P_T
 
 #endif                              /* struct_ros_slroscpp_internal_block_P_T */
 
-#ifndef struct_ros_slroscpp_internal_block_S_T
-#define struct_ros_slroscpp_internal_block_S_T
+#ifndef struct_ros_slroscpp_internal_block_p_T
+#define struct_ros_slroscpp_internal_block_p_T
 
-struct ros_slroscpp_internal_block_S_T
+struct ros_slroscpp_internal_block_p_T
 {
   boolean_T matlabCodegenIsDeleted;
   int32_T isInitialized;
   boolean_T isSetupComplete;
 };
 
-#endif                              /* struct_ros_slroscpp_internal_block_S_T */
+#endif                              /* struct_ros_slroscpp_internal_block_p_T */
 
 #ifndef struct_shared_uav_rst_sluav_internal_T
 #define struct_shared_uav_rst_sluav_internal_T

@@ -18,6 +18,12 @@ SimulinkPublisher<geometry_msgs::Twist, SL_Bus_trajGen_geometry_msgs_Twist> Pub_
 // For Block trajGen/Get Parameter
 SimulinkParameterGetter<real64_T, double> ParamGet_trajGen_152;
 
+// For Block trajGen/Get Parameter1
+SimulinkParameterGetter<real64_T, double> ParamGet_trajGen_279;
+
+// For Block trajGen/Call Service
+SimulinkServiceCaller<std_srvs::SetBool, SL_Bus_trajGen_std_srvs_SetBoolRequest, SL_Bus_trajGen_std_srvs_SetBoolResponse> ServCall_trajGen_307;
+
 void slros_node_init(int argc, char** argv)
 {
   ros::init(argc, argv, SLROSNodeName);

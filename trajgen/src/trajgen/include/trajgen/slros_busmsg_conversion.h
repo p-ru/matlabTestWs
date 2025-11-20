@@ -2,6 +2,7 @@
 #define _SLROS_BUSMSG_CONVERSION_H_
 
 #include <ros/ros.h>
+#include <std_srvs/SetBool.h>
 #include <geometry_msgs/Point.h>
 #include <geometry_msgs/Pose.h>
 #include <geometry_msgs/PoseWithCovariance.h>
@@ -13,6 +14,8 @@
 #include <ros/time.h>
 #include <std_msgs/Bool.h>
 #include <std_msgs/Header.h>
+#include <std_srvs/SetBoolRequest.h>
+#include <std_srvs/SetBoolResponse.h>
 #include "trajGen_types.h"
 #include "slros_msgconvert_utils.h"
 
@@ -49,6 +52,12 @@ void convertToBus(SL_Bus_trajGen_std_msgs_Bool* busPtr, std_msgs::Bool const* ms
 
 void convertFromBus(std_msgs::Header* msgPtr, SL_Bus_trajGen_std_msgs_Header const* busPtr);
 void convertToBus(SL_Bus_trajGen_std_msgs_Header* busPtr, std_msgs::Header const* msgPtr);
+
+void convertFromBus(std_srvs::SetBoolRequest* msgPtr, SL_Bus_trajGen_std_srvs_SetBoolRequest const* busPtr);
+void convertToBus(SL_Bus_trajGen_std_srvs_SetBoolRequest* busPtr, std_srvs::SetBoolRequest const* msgPtr);
+
+void convertFromBus(std_srvs::SetBoolResponse* msgPtr, SL_Bus_trajGen_std_srvs_SetBoolResponse const* busPtr);
+void convertToBus(SL_Bus_trajGen_std_srvs_SetBoolResponse* busPtr, std_srvs::SetBoolResponse const* msgPtr);
 
 
 #endif
